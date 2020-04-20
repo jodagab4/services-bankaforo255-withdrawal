@@ -25,7 +25,7 @@ public class WithdrawalEventsController {
 	@Autowired
 	private ITransactionService transactionService;
 	
-	@PostMapping("/v1/withdrawalEvent")
+	@PostMapping("/v1/withdrawalevent")
 	public ResponseEntity<Transaction> postLibraryEvent(@RequestBody Transaction transactionEvent) throws JsonProcessingException{
 		
 		Transaction tranSql = transactionService.save(transactionEvent);
